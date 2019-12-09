@@ -16,12 +16,10 @@ let theWord = removeBlankWords randomWord |> String.Concat
 
 let uppercase (x : string) = x.ToUpper()
 
-
 let word =
     if Configuration.CASE_SENSITIVE = true
     then theWord
     else theWord |> uppercase
-
 
 let wordToWorld (word:string) (used:char seq) =
     word |> String.map(fun elem -> 

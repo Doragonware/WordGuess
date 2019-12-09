@@ -1,4 +1,5 @@
 ﻿module Guess
+
 open System
 
 let helpChar = '!'
